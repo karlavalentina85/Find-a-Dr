@@ -6,4 +6,4 @@ The user will be able to enter in their location and a certain mile radius.  The
 It features current weather so the user will know the weather in the area so they are able to plan any trips to the health locations accordingly.
 The application will use 'Timely and Effective Care - Hospital' API and the 'Open Weather' API.
 
-Technologies Used: Vanilla JavaScript, jQuery, Materialize
+Technologies Used: Vanilla JavaScript, jQuery, Materialize CSS
