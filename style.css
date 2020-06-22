@@ -4,9 +4,33 @@
     flex-direction: column;
 }
 
+body {
+    background-image: url(erimage.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .Site-content {
     flex: 1;
 }
+style-changes
+h5 {
+    font-weight: bold;
+    color: coral;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#addresses {
+    position:relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 10px;
+    text-align:center;
+    padding: 20px;
+}
+#weather {
+    padding: 10px;
+}
+
 
 .page-footer {
     text-align: center;
