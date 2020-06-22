@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+  <html>
     <head>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
@@ -21,22 +21,26 @@
                 </ul>
               </div>
             </nav>
-        </div>
+          </div>
 
         <main class="Site-content">
         
-          <div class="container">
+        <div class="container">
             <div class="row">
-                <div class="col s12 m4 l3"> <!-- Note that "m4 l3" was added -->
-                    <input type="text" id="city-search" placeholder=" Enter Your City Name">
+                <div class="col s12 m4 l3"> <!-- Note that "m4 l3" was added --> 
+                  <input type="text" id="city-search" placeholder=" Enter Your City Name">
                     <button class="btn waves-effect waves-light" id=searchBtn type="submit" name="action">Search
                      <i class="material-icons left">send</i>
                     </button>
+                    <br>
+
                    
                         <div class="card small" id="weather">
-                          <h5>Current Weather</h5>  
-                            Nashville<br>6/21/2020<br><img src='http://openweathermap.org/img/wn/10d.png'><br>83.6 F<br>88% humidity
-                        </div>    
+                              <p>Current Weather</p>
+                            <div id="weather-details">  
+                   
+                            </div>
+                          </div>    
                             
               
                 </div>
@@ -60,14 +64,14 @@
             </div>
 
 
-          </div>
+        </div>
         </main>
 
 
         <footer class="page-footer">
             <div class="footer-copyright">
               <div class="container">
-              Copyright © 2020
+              © 2020 Copyright Text
               </div>
             </div>
           </footer>
@@ -81,4 +85,4 @@
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <script src= script.js></script>
     </body>
-</html>
+  </html>

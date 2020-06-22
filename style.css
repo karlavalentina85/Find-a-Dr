@@ -14,24 +14,23 @@ body {
 .Site-content {
     flex: 1;
 }
-style-changes
-h5 {
-    font-weight: bold;
-    color: coral;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+
 #addresses {
+    border-radius: 15px;
     position:relative;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     top: 10px;
     text-align:center;
     padding: 20px;
+    background-color: mintcream;
+    
 }
 #weather {
     padding: 10px;
-}
-
-
-.page-footer {
+    border-radius: 15px;
+    margin-top: 10px;
     text-align: center;
+    font-size: large;
+    background-color: mintcream;
 }
+
+
