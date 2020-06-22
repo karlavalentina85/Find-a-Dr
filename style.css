@@ -14,6 +14,7 @@ body {
 .Site-content {
     flex: 1;
 }
+style-changes
 h5 {
     font-weight: bold;
     color: coral;
@@ -31,3 +32,6 @@ h5 {
 }
 
 
+.page-footer {
+    text-align: center;
+}
