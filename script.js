@@ -4,12 +4,26 @@ $(document).ready(function() {
     var search=$('#searchBtn');
     var citySearch=$('#city-search');
     var chosenCity="";
+    var $information = $('#information');
+    var state = 'TN';
+
     search.on('click', function() {
         event.preventDefault();
         chosenCity=citySearch.val();
         searchCityCurrent(chosenCity);
         $("#weather").show();
         $("#addresses").show();
+        $.ajax({
+            type: 'GET',
+            url: "https://data.medicare.gov/resource/yv7e-xc69.json?state=" + state + '&city=' + chosenCity.toUpperCase() + '&condition=Emergency%20Department' ,
+            success: function(information) {
+                $.each(information, function(i, selectedinfo) {
+                    $information.append('<li>Hospital: ' + selectedinfo.hospital_name, 'Address ' + selectedinfo.city,' ' + selectedinfo.state, ' ' + selectedinfo.address, '</li>' );
+                });
+            }
+        });
+       }); 
+
 
     });
 
@@ -90,28 +104,6 @@ var searchCityCurrent = function(city) {
             searchAllApi(lat,lon,city);                
     });
 };
-
-$(function (){
     
-    var $information = $('#information');
-       
-    $.ajax({
-        type: 'GET',
-        url: "https://data.medicare.gov/resource/yv7e-xc69.json",
-        success: function(information) {
-            $.each(information, function(i, selectedinfo) {
-                $information.append('<li>Hospital: ' + selectedinfo.hospital_name, 'Address ' + selectedinfo.city,' ' + selectedinfo.state, ' ' + selectedinfo.address, '</li>');
-            });
-        }
-    });
-   }); 
-
-
-
-
-
-
-});
-
 
    
