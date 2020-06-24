@@ -5,11 +5,13 @@ $(document).ready(function() {
     var citySearch=$('#city-search');
     var chosenCity="";
     var $information = $('#information');
-    var state = 'TN';
+    var stateDropdown = $('#states')
+    var state = '';
 
     search.on('click', function() {
         event.preventDefault();
         chosenCity=citySearch.val();
+        state=stateDropdown.val();
         searchCityCurrent(chosenCity);
         $("#weather").show();
         $("#addresses").show();
@@ -101,7 +103,8 @@ var searchCityCurrent = function(city) {
             var lat=response.coord.lat;
 
             //Call function that creates all weather related parts of the page
-            searchAllApi(lat,lon,city);                
+            searchAllApi(lat,lon,city);    
+                        
     });
 };
     
