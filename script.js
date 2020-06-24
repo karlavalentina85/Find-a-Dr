@@ -103,7 +103,8 @@ var searchCityCurrent = function(city) {
             var lat=response.coord.lat;
 
             //Call function that creates all weather related parts of the page
-            searchAllApi(lat,lon,city);                
+            searchAllApi(lat,lon,city);    
+                        
     });
 };
     
